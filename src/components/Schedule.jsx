@@ -14,96 +14,90 @@ const schedule = [
       'Labdag',
     timeSlots: [
       {
-        name: 'Stefan van Tilborg',
-        description: 'Introductie programmeren met een Actor Framework',
-        start: '9:00',
-        end: '10:00',
+        name: '',
+        description: 'Inloop',
+        start: '09:00',
+        end: '09:30',
       },
       {
-        name: 'Matthijs Wagemakers',
-        description: 'Akka.Net',
-        start: '10:00',
-        end: '11:00',
+        name: 'Stefan van Tilborg',
+        description: 'Introductie Actor model theorie',
+        start: '09:30',
+        end: '10:30',
       },
       {
         name: 'Mark van Leijenhorst',
-        description: 'Microsoft Orleans',
+        description: 'Use-cases voor het Actor model',
+        start: '10:30',
+        end: '11:00',
+      },
+      {
+        name: 'Matthijs Wagemakers',
+        description: 'Actor model frameworks: Akka.NET en Microsoft Orleans',
         start: '11:00',
         end: '12:00',
       },
       {
-        name: 'Lunch',
-        description: null,
+        name: null,
+        description: 'Lunch',
         start: '12:00',
         end: '13:00',
       },
       {
-        name: 'Ronni Cantadore',
-        description: 'Buy or die',
+        name: 'Matthijs Wagemakers',
+        description: 'Toelichting op de opdracht',
         start: '13:00',
-        end: '14:00',
+        end: '13:30',
       },
       {
-        name: 'Erhart Cockrin',
-        description: 'In-person cancellation',
-        start: '2:00PM',
-        end: '3:00PM',
+        name: null,
+        description: 'Workshop: het Actor model in de praktijk',
+        start: '13:30',
+        end: '17:00',
       },
       {
-        name: 'Parker Johnson',
-        description: 'The pay/cancel switcheroo',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: null,
+        description: 'Bespreken ervaringen & bevindingen',
+        start: '17:00',
+        end: '18:00',
+      },
+      {
+        name: '',
+        description: 'Food & drinks',
+        start: '18:00',
+        end: '20:00',
       },
     ],
   },
   {
     date: 'April',
-    dateTime: '2022-04-05',
+    dateTime: '2022-04-13',
     summary:
       'Kennisavond',
     timeSlots: [
       {
-        name: 'Damaris Kimura',
-        description: 'The invisible card reader',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: null,
+        description: 'Inloop',
+        start: '17:00',
+        end: '18:00',
       },
       {
-        name: 'Ibrahim Frasch',
-        description: 'Stealing fingerprints',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: null,
+        description: 'Diner',
+        start: '18:00',
+        end: '19:00',
       },
       {
-        name: 'Cathlene Burrage',
-        description: 'Voting machines',
-        start: '11:00AM',
-        end: '12:00PM',
+        name: 'Hans Zaadnoordijk & Edwin de Smalen',
+        description: '.NET MAUI',
+        start: '19:00',
+        end: '21:00',
       },
       {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Rinaldo Beynon',
-        description: 'Blackhat SEO that works',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Waylon Hyden',
-        description: 'Turning your audience into a botnet',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Giordano Sagucio',
-        description: 'Fly phishing',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: null,
+        description: 'Drinks',
+        start: '21:00',
+        end: '22:00',
       },
     ],
   },
@@ -114,47 +108,15 @@ const schedule = [
       'Code weekend',
     timeSlots: [
       {
-        name: 'Andrew Greene',
-        description: 'Neuralink dark patterns',
-        start: '9:00AM',
-        end: '10:00AM',
+        name: 'Rob van Geloven & Mark van Leijenhorst',
+        description: 'Game development in .NET zonder Unity',
+
       },
       {
-        name: 'Heather Terry',
-        description: 'DALL-E for passports',
-        start: '10:00AM',
-        end: '11:00AM',
+        name: null,
+        description: 'Whiskey proeverij',
       },
-      {
-        name: 'Piers Wilkins',
-        description: 'Quantum password cracking',
-        start: '11:00AM',
-        end: '12:00PM',
-      },
-      {
-        name: 'Lunch',
-        description: null,
-        start: '12:00PM',
-        end: '1:00PM',
-      },
-      {
-        name: 'Gordon Sanderson',
-        description: 'SkyNet is coming',
-        start: '1:00PM',
-        end: '2:00PM',
-      },
-      {
-        name: 'Kimberly Parsons',
-        description: 'Dark patterns for the metaverse',
-        start: '2:00PM',
-        end: '3:00PM',
-      },
-      {
-        name: 'Richard Astley',
-        description: 'Knowing the game and playing it',
-        start: '3:00PM',
-        end: '4:00PM',
-      },
+
     ],
   },
 ]
@@ -253,11 +215,11 @@ function TimeSlots({ day, className }) {
             <div className="mx-auto mb-8 h-px w-48 bg-lime-20" />
           )}
           <h4 className="text-lg font-semibold tracking-tight text-green-900">
-            {timeSlot.name}
+            {timeSlot.description}
           </h4>
-          {timeSlot.description && (
+          {timeSlot.name && (
             <p className="mt-1 tracking-tight text-green-900">
-              {timeSlot.description}
+              {timeSlot.name}
             </p>
           )}
           <p className="mt-1 font-mono text-sm text-slate-500">
@@ -268,7 +230,7 @@ function TimeSlots({ day, className }) {
             <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
               {timeSlot.end}
             </time>{' '}
-            
+
           </p>
         </li>
       ))}

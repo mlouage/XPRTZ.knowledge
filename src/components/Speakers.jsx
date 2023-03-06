@@ -183,14 +183,14 @@ export function Speakers() {
               >
                 {day.speakers.map((speaker, speakerIndex) => (
                   <div key={speakerIndex}>
-                    <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+                    <div className="group relative h-[17.5rem] overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
-                          'absolute top-0 left-0 right-4 bottom-6 rounded-4xl transition duration-300 group-hover:scale-95 xl:right-6',
+                          'absolute top-0 left-0 right-4 bottom-6 rounded-4xl xl:right-6',
                         )}
                       />
                       <Image
-                          className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                          className="absolute inset-0 h-full w-full object-cover"
                           src={speaker.image}
                           alt=""
                           priority

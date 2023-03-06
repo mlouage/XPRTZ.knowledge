@@ -23,7 +23,7 @@ export function Hero() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-5xl font-bold tracking-tighter text-green-600 sm:text-7xl">
-            <span className="sr-only">DeceptiConf - </span>A design conference
+            <span className="sr-only">XPRTZ - </span>A design conference
             for the dark side.
           </h1>
           <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-green-900">
@@ -34,7 +34,7 @@ export function Hero() {
               from Western Union.
             </p>
             <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
+              At XPRTZ you’ll learn about the latest dark patterns being
               developed to trick even the smartest visitors, and you’ll learn
               how to deploy them without ever being detected.
             </p>
