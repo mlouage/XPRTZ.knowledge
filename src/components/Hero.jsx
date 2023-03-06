@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background.jpg'
 
@@ -39,15 +38,12 @@ export function Hero() {
               how to deploy them without ever being detected.
             </p>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
-            Get your tickets
-          </Button>
           <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Sprekers', '18'],
               // ['People Attending', '2,091'],
-              ['Locatie', 'Werkspoorkathedraal - Studio B'],
-              ['Plaats', 'Utrecht'],
+              ['Locatie', 'Studio B'],
+              ['Plaats', 'Werkspoorkathedraal, Utrecht'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-green-600">{name}</dt>

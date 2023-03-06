@@ -110,13 +110,13 @@ const schedule = [
       {
         name: 'Rob van Geloven & Mark van Leijenhorst',
         description: 'Game development in .NET zonder Unity',
-
+        start: '01',
       },
       {
         name: null,
         description: 'Whiskey proeverij',
+        start: '02',
       },
-
     ],
   },
 ]

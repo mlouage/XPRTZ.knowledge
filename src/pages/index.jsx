@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>XPRTZ - A community-driven design conference</title>
+        <title>XPRTZ.knowledge</title>
         <meta
           name="description"
-          content="At XPRTZ you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected."
+          content="A schedule of all the knowledge events organized by XPRTZ."
         />
       </Head>
       <Header />
