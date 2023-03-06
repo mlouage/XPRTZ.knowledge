@@ -42,8 +42,8 @@ export function Hero() {
             {[
               ['Sprekers', '18'],
               // ['People Attending', '2,091'],
-              ['Locatie', 'WSK - Studio B'],
-              ['Plaats', 'Utrecht'],
+              ['Locatie', 'Studio B'],
+              ['Plaats', 'Werkspoorkathedraal, Utrecht'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-green-600">{name}</dt>
