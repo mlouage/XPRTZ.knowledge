@@ -19,7 +19,7 @@ export function Header() {
             unoptimized
           />
         </div>
-        <div className="mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-green-600/10 py-4 font-mono text-sm text-green-600 sm:-mx-6 lg:mx-0 lg:basis-auto border-0 lg:py-0">
+        <div className="mx-4 flex flex-auto basis-full overflow-x-auto border-green-600/10 py-4 font-mono text-center text-sm text-green-600 sm:-mx-6 lg:mx-0 lg:basis-auto border-0 lg:py-0">
           <div className="mx-auto flex items-center gap-4 px-4">
             <p>Werkspoorkathedraal - Studio B, Utrecht</p>
           </div>
