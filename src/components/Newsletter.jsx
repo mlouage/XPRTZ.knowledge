@@ -35,27 +35,26 @@ export function Newsletter() {
           <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
             <div>
               <p className="font-display text-4xl font-medium tracking-tighter text-green-900 sm:text-5xl">
-                Stay up to date
+                Blijf op de hoogte
               </p>
               <p className="mt-4 text-lg tracking-tight text-green-900">
-                Get updates on all of our events and be the first to get
-                notified when tickets go on sale.
+                Lijkt het je wel wat om een keer langs te komen? Geen probleem, laat je e-mail adres achter en we maken direct een afspraak!
               </p>
             </div>
             <form>
               <h3 className="text-lg font-semibold tracking-tight text-green-900">
-                Sign up to our newsletter <span aria-hidden="true">&darr;</span>
+                Ik wil op de hoogte blijven <span aria-hidden="true">&darr;</span>
               </h3>
               <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-green-900/5 focus-within:ring-2 focus-within:ring-green-900">
                 <input
                   type="email"
                   required
-                  placeholder="Email address"
-                  aria-label="Email address"
+                  placeholder="E-mail adres"
+                  aria-label="E-mail adress"
                   className="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none"
                 />
                 <Button type="submit">
-                  <span className="sr-only sm:not-sr-only">Sign up today</span>
+                  <span className="sr-only sm:not-sr-only">Inschrijven</span>
                   <span className="sm:hidden">
                     <ArrowRightIcon className="h-6 w-6" />
                   </span>

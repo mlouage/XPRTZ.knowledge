@@ -11,7 +11,7 @@ const schedule = [
     date: 'Maart',
     dateTime: '2022-03-09',
     summary:
-      'Labdag',
+      'Labdag: Actor model',
     timeSlots: [
       {
         name: '',
@@ -73,7 +73,7 @@ const schedule = [
     date: 'April',
     dateTime: '2022-04-13',
     summary:
-      'Kennisavond',
+      'Kennisavond: .NET MAUI',
     timeSlots: [
       {
         name: null,
@@ -257,13 +257,10 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-green-600 sm:text-5xl">
-            Our three day schedule is jam-packed with brilliant, creative, evil
-            geniuses.
+            Ons schema voor de komende 3 maanden zit weer boordevol interessante onderwerpen
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-green-900">
-            The worst people in our industry giving the best talks you’ve ever
-            seen. Nothing will be recorded and every attendee has to sign an NDA
-            to watch the talks.
+            We houden elkaar op de hoogte van de volgende onderwerpen. Alles is live te volgen in Studio B op de Werkspoorkathedraal. Er wordt niets opgenomen, dus je moet erbij zijn om het te zien.
           </p>
         </div>
       </Container>
