@@ -125,8 +125,7 @@ export function Speakers() {
             Sprekers
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-green-900">
-            Learn from the experts on the cutting-edge of deception at the most
-            sinister companies.
+            Wereld bekende sprekers in Utrecht en omgeving vertellen met veel passie over hun vakgebied.
           </p>
         </div>
         <Tab.Group
