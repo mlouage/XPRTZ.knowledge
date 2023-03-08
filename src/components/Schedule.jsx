@@ -14,60 +14,70 @@ const schedule = [
             'Labdag: Actor model',
         timeSlots: [
             {
+                id: 1,
                 name: '',
                 description: 'Inloop',
                 start: '09:00',
                 end: '09:30',
             },
             {
+                id: 2,
                 name: 'Stefan van Tilborg, Matthijs Wagemakers en Mark van Leijenhorst',
                 description: 'Introductie Actor model theorie',
                 start: '09:30',
                 end: '10:45',
             },
             {
+                id: 3,
                 name: '',
                 description: 'Coffee break',
                 start: '10:45',
                 end: '11:00',
             },
             {
+                id: 4,
                 name: 'Matthijs Wagemakers',
                 description: 'Track 1: Actor model frameworks Microsoft Orleans',
                 start: '11:00',
                 end: '12:00',
             },
             {
+                id: 5,
                 name: 'Mark van Leijenhorst',
                 description: 'Track 2: Actor model frameworks Akka.NET',
                 start: '11:00',
                 end: '12:00',
             },
             {
+                id: 6,
                 name: null,
                 description: 'Lunch',
                 start: '12:00',
                 end: '13:00',
             },
             {
+                id: 7,
                 name: 'Matthijs Wagemakers',
                 description: 'Track 1: Workshop Actor model Orleans in de praktijk',
                 start: '13:00',
                 end: '17:00',
             },
             {
+                id: 8,
                 name: 'Mark van Leijenhorst',
                 description: 'Track 2: Workshop Actor model Akka.NET in de praktijk',
                 start: '13:00',
                 end: '17:30',
             },
             {
+                id: 9,
                 name: null,
                 description: 'Bespreken ervaringen & bevindingen',
                 start: '17:00',
                 end: '18:00',
             },
             {
+                id: 10,
                 name: '',
                 description: 'Food & drinks',
                 start: '18:00',
@@ -82,24 +92,28 @@ const schedule = [
             'Kennisavond: .NET MAUI',
         timeSlots: [
             {
+                id: 1,
                 name: null,
                 description: 'Inloop',
                 start: '17:00',
                 end: '18:00',
             },
             {
+                id: 2,
                 name: null,
                 description: 'Diner',
                 start: '18:00',
                 end: '19:00',
             },
             {
+                id: 3,
                 name: 'Hans Zaadnoordijk & Edwin de Smalen',
                 description: '.NET MAUI',
                 start: '19:00',
                 end: '21:00',
             },
             {
+                id: 4,
                 name: null,
                 description: 'Drinks',
                 start: '21:00',
@@ -114,19 +128,25 @@ const schedule = [
             'Code weekend',
         timeSlots: [
             {
+                id: 1,
                 name: 'Rob van Geloven',
                 description: 'Track 1: Game development in .NET zonder Unity',
-                start: '01',
+                start: '10:00',
+                end: '16:00',
             },
             {
+                id: 2,
                 name: 'Mark van Leijenhorst',
                 description: 'VR development in .NET met Unity',
-                start: '01',
+                start: '10:00',
+                end: '16:00',
             },
             {
+                id: 3,
                 name: null,
                 description: 'Whiskey proeverij',
-                start: '02',
+                start: '10:00',
+                end: '16:00',
             },
         ],
     },
@@ -219,7 +239,7 @@ function TimeSlots({ day, className }) {
         >
             {day.timeSlots.map((timeSlot, timeSlotIndex) => (
                 <li
-                    key={timeSlot.start}
+                    key={timeSlot.id}
                     aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end}`}
                 >
                     {timeSlotIndex > 0 && (
