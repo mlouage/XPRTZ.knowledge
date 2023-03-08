@@ -1,0 +1,23 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "stop"
+  },
+  "name": {
+    "__TYPE__": "FieldContent",
+    "value": "greater",
+    "type": "Text"
+  },
+  "role": {
+    "__TYPE__": "FieldContent",
+    "value": "sat",
+    "type": "Text"
+  },
+  "picture": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "__TYPE__": "ExternalLink",
+      "url": "http://twitter.com"
+    }
+  }
+}
