@@ -121,9 +121,9 @@ const schedule = [
             {
                 name: 'Mark van Leijenhorst',
                 description: 'VR development in .NET met Unity',
-                start: '01'
-            }
-      {
+                start: '01',
+            },
+            {
                 name: null,
                 description: 'Whiskey proeverij',
                 start: '02',
