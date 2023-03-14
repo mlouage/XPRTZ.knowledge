@@ -19,6 +19,22 @@ function ArrowRightIcon(props) {
   )
 }
 
+async function handleOnSubmit(e) {
+  e.preventDefault();
+
+  const formData = {};
+
+  Array.from(e.currentTarget.elements).forEach(field => {
+    if ( !field.name ) return;
+    formData[field.name] = field.value;
+  });
+
+  await fetch('/api/mail', {
+    method: 'POST',
+    body: JSON.stringify(formData)
+  });
+}
+
 export function Newsletter() {
   return (
     <section id="newsletter" aria-label="Newsletter">
@@ -41,12 +57,14 @@ export function Newsletter() {
                 Lijkt het je wel wat om een keer langs te komen? Geen probleem, laat je e-mail adres achter en we maken direct een afspraak!
               </p>
             </div>
-            <form>
+            <form method="post" onSubmit={handleOnSubmit}>
               <h3 className="text-lg font-semibold tracking-tight text-green-900">
                 Ik wil op de hoogte blijven <span aria-hidden="true">&darr;</span>
               </h3>
               <div className="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-green-900/5 focus-within:ring-2 focus-within:ring-green-900">
                 <input
+                  id="email"
+                  name="email"
                   type="email"
                   required
                   placeholder="E-mail adres"
