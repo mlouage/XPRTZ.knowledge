@@ -7,38 +7,17 @@ import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
 import stefan from '@/images/auteurs/stefanvt.png'
 import mark from '@/images/auteurs/markvl.png'
-import matthijs from '@/images/auteurs/matthijsw.png'
-import edwin from '@/images/auteurs/edwindes.png'
+import maarten from '@/images/auteurs/maartenl.png'
 import rob from '@/images/auteurs/robvg.png'
 import hans from '@/images/auteurs/hansn.png'
+import erwin from '@/images/auteurs/erwinf.png'
+import sybren from '@/images/auteurs/sybrenr.png'
 
 const days = [
   {
-    name: 'Labdag',
-    date: 'Maart',
-    dateTime: '2022-03-09',
-    speakers: [
-      {
-        name: 'Matthijs Wagemakers',
-        role: 'Developer',
-        image: matthijs,
-      },
-      {
-        name: 'Mark Van Leijenhorst',
-        role: 'Developer',
-        image: mark,
-      },
-      {
-        name: 'Stefan van Tilborg',
-        role: 'Developer',
-        image: stefan,
-      },
-    ],
-  },
-  {
     name: 'Kennisavond',
     date: 'April',
-    dateTime: '2022-04-13',
+    dateTime: '2023-04-13',
     speakers: [
       {
         name: 'Hans Zaadnoordijk',
@@ -46,9 +25,9 @@ const days = [
         image: hans,
       },
       {
-        name: 'Edwin De Smalen',
+        name: 'Erwin Fokkinga',
         role: 'Developer',
-        image: edwin,
+        image: erwin,
       },
 
     ],
@@ -56,7 +35,7 @@ const days = [
   {
     name: 'Code weekend',
     date: 'Mei',
-    dateTime: '2022-05-13',
+    dateTime: '2023-05-13',
     speakers: [
       {
         name: 'Mark Van Leijenhorst',
@@ -68,27 +47,31 @@ const days = [
         role: 'Developer',
         image: rob,
       },
+      {
+        name: 'Stefan van Tilborg',
+        role: 'Developer',
+        image: stefan,
+      },
+    ],
+  },
+  {
+    name: 'Kennisavond',
+    date: 'Juni',
+    dateTime: '2023-06-08',
+    speakers: [
+      {
+        name: 'Maarten Louage',
+        role: 'Developer',
+        image: maarten,
+      },
+      {
+        name: 'Sybren Roede',
+        role: 'Developer',
+        image: sybren,
+      }
     ],
   },
 ]
-
-function ImageClipPaths({ id, ...props }) {
-  return (
-    <svg aria-hidden="true" width={0} height={0} {...props}>
-      <defs>
-        <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
-          <path d="M0,0 h0.729 v0.129 h0.121 l-0.016,0.032 C0.815,0.198,0.843,0.243,0.885,0.243 H1 v0.757 H0.271 v-0.086 l-0.121,0.057 v-0.214 c0,-0.032,-0.026,-0.057,-0.057,-0.057 H0 V0" />
-        </clipPath>
-        <clipPath id={`${id}-1`} clipPathUnits="objectBoundingBox">
-          <path d="M1,1 H0.271 v-0.129 H0.15 l0.016,-0.032 C0.185,0.802,0.157,0.757,0.115,0.757 H0 V0 h0.729 v0.086 l0.121,-0.057 v0.214 c0,0.032,0.026,0.057,0.057,0.057 h0.093 v0.7" />
-        </clipPath>
-        <clipPath id={`${id}-2`} clipPathUnits="objectBoundingBox">
-          <path d="M1,0 H0.271 v0.129 H0.15 l0.016,0.032 C0.185,0.198,0.157,0.243,0.115,0.243 H0 v0.757 h0.729 v-0.086 l0.121,0.057 v-0.214 c0,-0.032,0.026,-0.057,0.057,-0.057 h0.093 V0" />
-        </clipPath>
-      </defs>
-    </svg>
-  )
-}
 
 export function Speakers() {
   let id = useId()
