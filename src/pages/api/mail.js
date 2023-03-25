@@ -1,3 +1,5 @@
+import { subscribeToNewsletter } from '../../lib/newsletter';
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { email } = req.body;
@@ -8,7 +10,7 @@ export default async function handler(req, res) {
 
     try {
       // Call your email service to subscribe the user
-      
+      await subscribeToNewsletter(email);
 
       return res.status(200).json({ message: 'Subscribed successfully' });
     } catch (error) {
