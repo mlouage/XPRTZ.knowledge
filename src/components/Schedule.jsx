@@ -8,86 +8,8 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
     {
-        date: 'Maart',
-        dateTime: '2022-03-09',
-        summary:
-            'Labdag: Actor model',
-        timeSlots: [
-            {
-                id: 1,
-                name: '',
-                description: 'Inloop',
-                start: '09:00',
-                end: '09:30',
-            },
-            {
-                id: 2,
-                name: 'Stefan van Tilborg, Matthijs Wagemakers en Mark van Leijenhorst',
-                description: 'Introductie Actor model theorie',
-                start: '09:30',
-                end: '10:45',
-            },
-            {
-                id: 3,
-                name: '',
-                description: 'Coffee break',
-                start: '10:45',
-                end: '11:00',
-            },
-            {
-                id: 4,
-                name: 'Matthijs Wagemakers',
-                description: 'Track 1: Actor model frameworks Microsoft Orleans',
-                start: '11:00',
-                end: '12:00',
-            },
-            {
-                id: 5,
-                name: 'Mark van Leijenhorst',
-                description: 'Track 2: Actor model frameworks Akka.NET',
-                start: '11:00',
-                end: '12:00',
-            },
-            {
-                id: 6,
-                name: null,
-                description: 'Lunch',
-                start: '12:00',
-                end: '13:00',
-            },
-            {
-                id: 7,
-                name: 'Matthijs Wagemakers',
-                description: 'Track 1: Workshop Actor model Orleans in de praktijk',
-                start: '13:00',
-                end: '17:00',
-            },
-            {
-                id: 8,
-                name: 'Mark van Leijenhorst',
-                description: 'Track 2: Workshop Actor model Akka.NET in de praktijk',
-                start: '13:00',
-                end: '17:30',
-            },
-            {
-                id: 9,
-                name: null,
-                description: 'Bespreken ervaringen & bevindingen',
-                start: '17:00',
-                end: '18:00',
-            },
-            {
-                id: 10,
-                name: '',
-                description: 'Food & drinks',
-                start: '18:00',
-                end: '20:00',
-            },
-        ],
-    },
-    {
         date: 'April',
-        dateTime: '2022-04-13',
+        dateTime: '2023-04-13',
         summary:
             'Kennisavond: .NET MAUI',
         timeSlots: [
@@ -107,7 +29,7 @@ const schedule = [
             },
             {
                 id: 3,
-                name: 'Hans Zaadnoordijk & Edwin de Smalen',
+                name: 'Hans Zaadnoordijk & Erwin Fokkinga',
                 description: '.NET MAUI',
                 start: '19:00',
                 end: '21:00',
@@ -123,7 +45,7 @@ const schedule = [
     },
     {
         date: 'Mei',
-        dateTime: '2022-04-06',
+        dateTime: '2023-04-06',
         summary:
             'Code weekend',
         timeSlots: [
@@ -143,10 +65,53 @@ const schedule = [
             },
             {
                 id: 3,
+                name: 'Stefan van Tilborg',
+                description: 'Lego Robots bouwen met .NET',
+                start: '10:00',
+                end: '16:00',
+            },
+            {
+                id: 4,
                 name: null,
                 description: 'Whiskey proeverij',
                 start: '10:00',
                 end: '16:00',
+            },
+        ],
+    },
+    {
+        date: 'Juni',
+        dateTime: '2023-06-08',
+        summary:
+            'Kennisavond: OpenTelemetry en Observability',
+        timeSlots: [
+            {
+                id: 1,
+                name: null,
+                description: 'Inloop',
+                start: '17:00',
+                end: '18:00',
+            },
+            {
+                id: 2,
+                name: null,
+                description: 'Diner',
+                start: '18:00',
+                end: '19:00',
+            },
+            {
+                id: 3,
+                name: 'Maarten Louage & Sybren Roede',
+                description: 'OpenTelemetry en Observability',
+                start: '19:00',
+                end: '21:00',
+            },
+            {
+                id: 4,
+                name: null,
+                description: 'Drinks',
+                start: '21:00',
+                end: '22:00',
             },
         ],
     },
