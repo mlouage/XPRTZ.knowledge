@@ -5,8 +5,8 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function subscribeToNewsletter(email) {
   const msg = {
-    to: 'maarten@xprtz.net',
-    from: 'maarten@xprtz.net',
+    to: process.env.TO_ADDRESS,
+    from: process.env.FROM_ADDRESS,
     subject: 'Nieuwe aanmelding voor een kennisavond',
     text: `${email} heeft zich ingeschreven op de kennis website. Neem contact op met deze persoon.`,
     html: `<p><strong>${email}</strong> heeft zich ingeschreven op de kennis website. Neem contact op met deze persoon.</p>`,
