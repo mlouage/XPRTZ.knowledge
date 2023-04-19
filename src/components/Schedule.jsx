@@ -45,37 +45,107 @@ const schedule = [
     },
     {
         date: 'Mei',
-        dateTime: '2023-04-06',
+        dateTime: '2023-05-12',
         summary:
             'Code weekend',
         timeSlots: [
             {
+                id: 0,
+                name: null,
+                description: 'Vrijdag',
+                start: null,
+                end: null,
+            },
+            {
                 id: 1,
-                name: 'Rob van Geloven',
-                description: 'Track 1: Game development in .NET zonder Unity',
-                start: '10:00',
-                end: '16:00',
+                name: null,
+                description: 'Ontvangst',
+                start: '16:00',
+                end: '17:00',
             },
             {
                 id: 2,
-                name: 'Mark van Leijenhorst',
-                description: 'VR development in .NET met Unity',
-                start: '10:00',
-                end: '16:00',
+                name: null,
+                description: 'diner',
+                start: '18:30',
+                end: '20:00',
             },
             {
                 id: 3,
-                name: 'Stefan van Tilborg',
-                description: 'Lego Robots bouwen met .NET',
-                start: '10:00',
-                end: '16:00',
+                name: null,
+                description: 'Whiskey proeverij',
+                start: '20:00',
+                end: null,
+            },
+            {
+                id: 39,
+                name: null,
+                description: 'Zaterdag',
+                start: null,
+                end: null,
             },
             {
                 id: 4,
                 name: null,
-                description: 'Whiskey proeverij',
-                start: '10:00',
-                end: '16:00',
+                description: 'Ontbijt',
+                start: '08:00',
+                end: '09:00',
+            },
+            {
+                id: 5,
+                name: 'Rob van Geloven',
+                description: 'Tech Track 1: Writing a retro emulator in C#',
+                start: '09:00',
+                end: '14:00',
+            },
+            {
+                id: 6,
+                name: 'Mark van Leijenhorst',
+                description: 'Tech Track 2: VR development in .NET met Unity',
+                start: '09:00',
+                end: '14:00',
+            },
+            {
+                id: 7,
+                name: null,
+                description: 'Workshop: Eijscoach',
+                start: '14:00',
+                end: '17:00',
+            },
+            {
+                id: 8,
+                name: null,
+                description: 'BBQ en avond activiteiten',
+                start: '18:00',
+                end: null,
+            },
+            {
+                id: 89,
+                name: null,
+                description: 'Zondag',
+                start: null,
+                end: null,
+            },
+            {
+                id: 9,
+                name: null,
+                description: 'Ontbijt',
+                start: '08:00',
+                end: '09:00',
+            },
+            {
+                id: 10,
+                name: 'Stefan van Tilborg',
+                description: 'Tech Track: Lego Robots bouwen met .NET',
+                start: '09:00',
+                end: '12:00',
+            },
+            {
+                id: 11,
+                name: null,
+                description: 'Lunch en vertrek',
+                start: '12:00',
+                end: '14:00',
             },
         ],
     },
@@ -210,24 +280,39 @@ function TimeSlots({ day, className }) {
                     {timeSlotIndex > 0 && (
                         <div className="mx-auto mb-8 h-px w-48 bg-lime-20" />
                     )}
-                    <h4 className="text-lg font-semibold tracking-tight text-green-900">
-                        {timeSlot.description}
-                    </h4>
+                    {timeSlot.description && timeSlot.start && (
+                        <h4 className="text-lg font-semibold tracking-tight text-green-900">
+                            {timeSlot.description}
+                        </h4>
+                    )}
+                    {timeSlot.description && timeSlot.start == null && timeSlot.end == null && (
+                        <h4 className="text-lg font-semibold tracking-tight text-green-600">
+                            {timeSlot.description}
+                        </h4>
+                    )}
                     {timeSlot.name && (
                         <p className="mt-1 tracking-tight text-green-900">
                             {timeSlot.name}
                         </p>
                     )}
-                    <p className="mt-1 font-mono text-sm text-slate-500">
-                        <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
-                            {timeSlot.start}
-                        </time>{' '}
-                        -{' '}
-                        <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
-                            {timeSlot.end}
-                        </time>{' '}
-
-                    </p>
+                    {timeSlot.start && timeSlot.end && (
+                        <p className="mt-1 font-mono text-sm text-slate-500">
+                            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
+                                {timeSlot.start}
+                            </time>{' '}
+                            -{' '}
+                            <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
+                                {timeSlot.end}
+                            </time>{' '}
+                        </p>
+                    )}
+                    {timeSlot.start && timeSlot.end == null && (
+                        <p className="mt-1 font-mono text-sm text-slate-500">
+                            <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
+                                {timeSlot.start}
+                            </time>
+                        </p>
+                    )}
                 </li>
             ))}
         </ol>
