@@ -139,10 +139,15 @@ function ScheduleTabbed() {
 }
 
 function DaySummary({ day }) {
+    let date = new Date(day.dateTime);
+    let month = new Intl.DateTimeFormat('nl', { month: 'long' }).format(date);
+    let dayNumber = new Intl.DateTimeFormat('nl', { day: '2-digit' }).format(date);
+
     return (
         <>
             <h3 className="text-2xl font-semibold tracking-tight text-green-900">
-                <time dateTime={day.dateTime}>{day.date}</time>
+                {dayNumber > 1 && <div><span>{dayNumber}</span> <span>{month}</span></div>}
+                {dayNumber <= 1 && <span className='capitalize'>{month}</span>}
             </h3>
             <p className="mt-1.5 text-base tracking-tight text-green-900">
                 {day.summary}
