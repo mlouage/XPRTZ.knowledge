@@ -11,7 +11,7 @@ const schedule = [
         date: 'Oktober',
         dateTime: '2023-10-16',
         summary:
-            'Labdag: DDD en Consumer based tontract Testing',
+            'Labdag: DDD en Consumer based contract Testing',
         timeSlots: [
             {
                 id: 1,
@@ -30,7 +30,7 @@ const schedule = [
             {
                 id: 3,
                 name: 'Merlin Bieze en Martijn Spaan',
-                description: 'Track 2: Consumerbased contract testing met pact.io',
+                description: 'Track 2: Consumer based contract testing met pact.io',
                 start: '09:30',
                 end: '12:00',
             },
@@ -51,7 +51,7 @@ const schedule = [
             {
                 id: 6,
                 name: 'Merlin Bieze en Martijn Spaan',
-                description: 'Track 2: Consumerbased contract testing met pact.io - Vervolg',
+                description: 'Track 2: Consumer based contract testing met pact.io - Vervolg',
                 start: '13:00',
                 end: '17:00',
             },
