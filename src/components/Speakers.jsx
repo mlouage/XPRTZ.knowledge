@@ -13,31 +13,62 @@ import hans from '@/images/auteurs/hansn.png'
 import erwin from '@/images/auteurs/erwinf.png'
 import sybren from '@/images/auteurs/sybrenr.png'
 import merlin from '@/images/auteurs/merlinb.png'
+import martijn from '@/images/auteurs/martijns.png'
+import dick from '@/images/auteurs/dickvh.png'
+import sander from '@/images/auteurs/sandero.png'
+import patrickbes from '@/images/externals/patrickbes.jpg'
 
 const days = [
   {
-    name: 'Kennisavond',
-    date: 'Juli',
-    dateTime: '2023-07-13',
+    name: 'Labdag',
+    date: 'Oktober',
+    dateTime: '2023-10-16',
     speakers: [
       {
         name: 'Merlin Bieze',
         role: 'Developer',
         image: merlin,
       },
+      {
+        name: 'Martijn Spaan',
+        role: 'Developer',
+        image: martijn,
+      },
+      {
+        name: 'Dick van Hirtum',
+        role: 'Developer',
+        image: dick,
+      },
+      {
+        name: 'Sander Obdeijn',
+        role: 'Developer',
+        image: sander,
+      },
     ],
   },
   {
-    name: 'Zomer break',
-    date: 'Augustus',
-    dateTime: '2023-08-01',
-    speakers: [],
+    name: 'Kennisavond',
+    date: 'November',
+    dateTime: '2023-11-09',
+    speakers: [
+      {
+        name: 'Patrick Bes',
+        role: 'Technical Lead Consultant at Bergler Groep',
+        image: patrickbes,
+      },
+    ],
   },
   {
-    name: 'Zomer break',
-    date: 'September',
-    dateTime: '2023-09-01',
-    speakers: [],
+    name: 'Kennisavond',
+    date: 'December',
+    dateTime: '2023-12-14',
+    speakers: [
+      {
+        name: 'Stefan van Tilborg',
+        role: 'Developer',
+        image: stefan,
+      },
+    ],
   },
 ]
 

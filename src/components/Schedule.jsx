@@ -8,10 +8,74 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
     {
-        date: 'Juli',
-        dateTime: '2023-07-13',
+        date: 'Oktober',
+        dateTime: '2023-10-16',
         summary:
-            'Kennisavond: Azure platform overview bij Action',
+            'Labdag: DDD en Consumer based contract Testing',
+        timeSlots: [
+            {
+                id: 1,
+                name: null,
+                description: 'Inloop',
+                start: '09:00',
+                end: '09:30',
+            },
+            {
+                id: 2,
+                name: 'Dick van Hirtum en Sander Obdeijn',
+                description: 'Track 1: DDD',
+                start: '09:30',
+                end: '12:00',
+            },
+            {
+                id: 3,
+                name: 'Merlin Bieze en Martijn Spaan',
+                description: 'Track 2: Consumer based contract testing met pact.io',
+                start: '09:30',
+                end: '12:00',
+            },
+            {
+                id: 4,
+                name: null,
+                description: 'Lunch',
+                start: '12:00',
+                end: '13:00',
+            },
+            {
+                id: 5,
+                name: 'Dick van Hirtum en Sander Obdeijn',
+                description: 'Track 1: DDD - Vervolg',
+                start: '13:00',
+                end: '17:00',
+            },
+            {
+                id: 6,
+                name: 'Merlin Bieze en Martijn Spaan',
+                description: 'Track 2: Consumer based contract testing met pact.io - Vervolg',
+                start: '13:00',
+                end: '17:00',
+            },
+            {
+                id: 7,
+                name: 'Iedereen',
+                description: 'Presenteren bevindingen',
+                start: '17:00',
+                end: '17:30',
+            },
+            {
+                id: 8,
+                name: null,
+                description: 'Drinks en diner',
+                start: '17:00',
+                end: '20:00',
+            },
+        ],
+    },
+    {
+        date: 'November',
+        dateTime: '2023-11-09',
+        summary:
+            'Kennisavond: Threat Modeling Workshop',
         timeSlots: [
             {
                 id: 1,
@@ -29,8 +93,8 @@ const schedule = [
             },
             {
                 id: 3,
-                name: 'Merlin Bieze en Daan Stolp',
-                description: 'Azure platform overview bij Action',
+                name: 'Patrick Bes',
+                description: 'Threat Modeling Workshop',
                 start: '19:00',
                 end: '21:00',
             },
@@ -44,34 +108,40 @@ const schedule = [
         ],
     },
     {
-        date: 'Augustus',
-        dateTime: '2023-08-01',
+        date: 'December',
+        dateTime: '2023-12-14',
         summary:
-            'Zomer break',
-        timeSlots: [
-            {
-                id: 0,
-                name: null,
-                description: 'Zomer break',
-                start: null,
-                end: null,
-            },
-        ],
-    },
-    {
-        date: 'September',
-        dateTime: '2023-09-01',
-        summary:
-            'Zomer break',
-        timeSlots: [
-            {
-                id: 1,
-                name: null,
-                description: 'Zomer break',
-                start: null,
-                end: null,
-            },
-        ],
+            'Kennisavond: presenteren opleidingen en pubquiz',
+            timeSlots: [
+                {
+                    id: 1,
+                    name: null,
+                    description: 'Inloop',
+                    start: '17:00',
+                    end: '18:00',
+                },
+                {
+                    id: 2,
+                    name: null,
+                    description: 'Diner',
+                    start: '18:00',
+                    end: '19:00',
+                },
+                {
+                    id: 3,
+                    name: 'Iedereen',
+                    description: 'Presenteren opleidingen',
+                    start: '19:00',
+                    end: '20:15',
+                },
+                {
+                    id: 4,
+                    name: 'Stefan van Tilborg',
+                    description: 'Pubquiz (met drinks)',
+                    start: '20:30',
+                    end: '21:15',
+                },
+            ],
     },
 ]
 
