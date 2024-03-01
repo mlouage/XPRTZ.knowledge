@@ -13,16 +13,35 @@ import hans from '@/images/auteurs/hansn.png'
 import erwin from '@/images/auteurs/erwinf.png'
 import sybren from '@/images/auteurs/sybrenr.png'
 import merlin from '@/images/auteurs/merlinb.png'
+import dennisv from '@/images/auteurs/dennisv.png'
 import martijn from '@/images/auteurs/martijns.png'
 import dick from '@/images/auteurs/dickvh.png'
 import sander from '@/images/auteurs/sandero.png'
 import patrickbes from '@/images/externals/patrickbes.jpg'
+import martyn from '@/images/externals/martyn.jpg'
 
 const days = [
   {
     name: 'Labdag',
-    date: 'Oktober',
-    dateTime: '2023-10-16',
+    date: 'Maart',
+    dateTime: '2024-03-06',
+    speakers: [
+      {
+        name: 'Dennis Visjager',
+        role: 'Developer',
+        image: dennisv,
+      },
+      {
+        name: 'Rob van Geloven',
+        role: 'Developer',
+        image: rob,
+      }
+    ],
+  },
+  {
+    name: 'Codeweekend',
+    date: 'April',
+    dateTime: '2024-04-19',
     speakers: [
       {
         name: 'Merlin Bieze',
@@ -30,43 +49,26 @@ const days = [
         image: merlin,
       },
       {
-        name: 'Martijn Spaan',
-        role: 'Developer',
-        image: martijn,
-      },
-      {
-        name: 'Dick van Hirtum',
-        role: 'Developer',
-        image: dick,
-      },
-      {
-        name: 'Sander Obdeijn',
-        role: 'Developer',
-        image: sander,
-      },
-    ],
-  },
-  {
-    name: 'Kennisavond',
-    date: 'November',
-    dateTime: '2023-11-09',
-    speakers: [
-      {
-        name: 'Patrick Bes',
-        role: 'Technical Lead Consultant at Bergler Groep',
-        image: patrickbes,
-      },
-    ],
-  },
-  {
-    name: 'Kennisavond',
-    date: 'December',
-    dateTime: '2023-12-14',
-    speakers: [
-      {
         name: 'Stefan van Tilborg',
         role: 'Developer',
         image: stefan,
+      },
+      {
+        name: 'Maarten Louage',
+        role: 'Developer',
+        image: maarten,
+      }
+    ],
+  },
+  {
+    name: 'Kennisavond',
+    date: 'Mei',
+    dateTime: '2024-05-09',
+    speakers: [
+      {
+        name: 'Martyn de Vries',
+        role: 'Developer',
+        image: martyn,
       },
     ],
   },
