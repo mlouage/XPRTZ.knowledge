@@ -80,8 +80,8 @@ const schedule = [
         ],
     },
     {
-        date: 'December',
-        dateTime: '2024-05-09',
+        date: 'Mei',
+        dateTime: '2024-05-16',
         summary:
             'Kennisavond: AWS voor dotnet developers',
             timeSlots: [
