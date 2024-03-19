@@ -63,7 +63,7 @@ const days = [
   {
     name: 'Kennisavond',
     date: 'Mei',
-    dateTime: '2024-05-09',
+    dateTime: '2024-05-16',
     speakers: [
       {
         name: 'Martyn de Vries',
